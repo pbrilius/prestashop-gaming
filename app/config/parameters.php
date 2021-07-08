@@ -1,0 +1,25 @@
+<?php return array (
+  'parameters' => 
+  array (
+    'database_host' => '127.0.0.1',
+    'database_port' => '',
+    'database_name' => 'povilas-test',
+    'database_user' => 'povilas-testusr',
+    'database_password' => '8bXcx7*0',
+    'database_prefix' => 'ps_',
+    'database_engine' => 'InnoDB',
+    'mailer_transport' => 'smtp',
+    'mailer_host' => '127.0.0.1',
+    'mailer_user' => NULL,
+    'mailer_password' => NULL,
+    'secret' => 'L1RgZ86IXMyTPp7XyFY2tp66y8IY7gkVQuz8WVywAWZ9bRzOXuXRSEWtdU75G4jh',
+    'ps_caching' => 'CacheMemcache',
+    'ps_cache_enable' => false,
+    'ps_creation_date' => '2021-07-08',
+    'locale' => 'lt-LT',
+    'use_debug_toolbar' => true,
+    'cookie_key' => 'USVpzIcVRVjNcQ267kCgNOKcqGFPSpYvPqdTqcNQySzJ5DLQKgPzZ06nQbOf4Vt3',
+    'cookie_iv' => 'YEhVD6S3TN6ofhnPSqUtHXSGxdE45Q7j',
+    'new_cookie_key' => 'def000006be24ffecf24a7660321b6c8203ba9c66b5fd861bc5bea3fd63c64b5b960c5bcf3f3fea1749b32fd06bac500f452a99232eedb1efa132a2be9100a4897f5a72c',
+  ),
+);
