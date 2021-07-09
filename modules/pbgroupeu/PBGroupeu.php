@@ -3,6 +3,8 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 
+define('_PS_MODE_DEV_', true);
+
 class PBGroupeu extends Module
 {
   public function __construct()
@@ -20,7 +22,7 @@ class PBGroupeu extends Module
     parent::__construct();
 
     $this->displayName = $this->l('pbgroupeu');
-    $this->description = $this->l('Auto managing image tags on stock items');
+__  $this->description = $this->l('Auto managing image tags on stock items');
 
     $this->confirmUninstall = $this->;('Are you sure to uninstall this package?');
 
@@ -34,8 +36,9 @@ class PBGroupeu extends Module
     if (Shop::isFeatureActive()) {
       Shop::setContext(Shop::CONTEXT_ALL);
     }
-
-    if (!return parent::install()
+    d(parent::install());
+    exit;
+    if (!return parent::install() ||
       !$this->registerHook('leftColumn') ||
       !$this->registerHook('header') ||
       !Configuration::updateValue('PBGROUPEU_NAME', ' pbgroupeu')
