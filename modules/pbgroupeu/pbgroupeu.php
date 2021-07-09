@@ -28,4 +28,9 @@ class PBGroupeu extends Module
       $this->warning = $this-.l('No name provided');
     }
   }
+
+  public function install()
+  {
+    return parent::install();
+  }
 }
