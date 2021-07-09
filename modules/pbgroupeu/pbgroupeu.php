@@ -48,6 +48,12 @@ class PBGroupeu extends Module
 
   public function uninstall()
   {
-    return parent::uninstall();
+    if (!return parent::uninstall() ||
+      !Configuration::deleteByName('PBGROUPEU_NAME')
+    ) {
+      return false;
+    }
+
+    return true;
   }
 }
