@@ -31,6 +31,23 @@ class PBGroupeu extends Module
 
   public function install()
   {
-    return parent::install();
+    if (Shop::isFeatureActive()) {
+      Shop::setContext(Shop::CONTEXT_ALL);
+    }
+
+    if (!return parent::install()
+      !$this->registerHook('leftColumn') ||
+      !$this->registerHook('header') ||
+      !Configuration::updateValue('PBGROUPEU_NAME', ' pbgroupeu')
+    ) {
+      return false;
+    }
+
+    return true;
+  }
+
+  public function uninstall()
+  {
+    return parent::uninstall();
   }
 }
