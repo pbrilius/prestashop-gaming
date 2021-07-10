@@ -5,7 +5,7 @@ if (!defined('_PS_VERSION_')) {
 
 define('_PS_MODE_DEV_', true);
 
-class PBGroupeu extends Module
+class pbgroupeu extends Module
 {
   public function __construct()
   {
